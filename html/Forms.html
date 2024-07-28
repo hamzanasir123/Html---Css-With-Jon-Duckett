@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <h3>How to collect information from visitors<br>
+        Different kinds of form controls<br>
+        New HTML5 form controls</h3>
+    <h4>There are several types of form controls that 
+        you can use to collect information from visitors 
+        to your site.</h4>
+
+    <h1>Adding Text</h1>
+<ul>
+    <li>Text Input (Single Line)</li>
+    <li>Possword Input</li>
+    <li>Text Area (Multi Line)</li>
+</ul>
+
+<h1>Making Choices</h1>
+<ul>
+    <li>Radio Buttons</li>
+    <li>CheckBoxes</li>
+    <li>Drop Down Boxes</li>
+</ul>
+
+<h1>Submitting Forms</h1>
+
+<ul>
+    <li>Submit Buttons</li>
+    <li>Image Buttons</li>
+</ul>
+
+<form action="app.ts" method="post">
+    <p>Its A Form Space</p>
+</form>
+
+<form action="app.ts" method="post">
+
+    <h3>Input Text</h3>
+
+    <p>UserName :
+
+        <input type="text" name="UserName"
+    size="10" maxlength="20">
+
+</p>
+    <h3>Possword</h3>
+    <p>Possword :
+        <input type="password" name="Possword">
+    </p>
+    
+    <h3>Textarea</h3>
+    <p>Write SomeThing About YourSelf.</p>
+    <textarea name="Comments" cols="20" rows="5">Enter Your Comments
+    </textarea>
+    <br>
+    
+    <h3>Radio Button</h3>
+    <p>How Are You ?</p>
+    <input type="radio" name="Choice" value="Good"
+    checked = "checked"> Good
+    <input type="radio" name="Choice" value="V.Good"> V.Good
+    <input type="radio" name="Choice" value="Exelent"> Exelent
+    
+    <h3>CheckBoxes</h3>
+<p>What Is Your Favorite Language</p>
+    <input type="checkbox" name="Check" value="JavaScript" checked = "checked">
+    <input type="checkbox" name="Check" value="PHP"> PHP
+    <input type="checkbox" name="Check" value="Python"> Python
+    
+    <h3>DropDown List</h3>
+<p>How Old Are You ?</p>
+    <select name="select">
+        <option value="18+">18+</option>
+        <option value="20+">20+</option>
+        <option value="30+">30+</option>
+    </select>
+    
+    <h3>Multiple Select Box</h3>
+<p>Do you play any of the following instruments? 
+ (You can select more than one option by holding 
+ down control on a PC or command key on a Mac 
+ while selecting different options.)</p>
+<select name="instruments" size="3" 
+ multiple="multiple">
+ <option value="guitar" selected="selected">
+ Guitar</option>
+ <option value="drums">Drums</option>
+ <option value="keyboard" 
+ selected="selected">Keyboard</option>
+ <option value="bass">Bass</option>
+ <option value="bass1">Bass1</option>
+ <option value="bass2">Bass2</option>
+ <option value="bass3">Bass3</option>
+ <option value="bass4">Bass4</option>
+</select>
+
+<h3>File Input Box</h3>
+
+<p>Upload Your Photo :</p>
+<input type="file" name="Photo" >
+<br>
+<input type="submit" value="Upload">
+
+<h3>Submit Button</h3>
+<p>Subscribe to our email list:</p>
+<input type="text" name="email" />
+<input type="submit" name="subscribe" 
+ value="Subscribe" />
+
+ <h3>Image Submit Button</h3>
+ <p>Subscribe to our email list:</p>
+ <input type="text" name="email" />
+ <input type="image" src="/images/download.jpeg" 
+ width="130" height="25" />
+
+<h3>Button And Hiding Control</h3>
+
+<button>
+    <img src="/images/download.jpeg" alt="Submit" height="100" width="170">Submit</button>
+    <input type="hidden" name="bookmark" value="lyrics">
+</button>
+<br>
+<br>
+<h3>Labeling Form Control</h3>
+<br>
+<label>Age : <input type="text" name="age"></label>
+<br>
+<input id="female" type="radio" name="gender" value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m">
+<label for="male">Male</label>
+
+<h3>Grouping Form Element</h3>
+
+<fieldset>
+    <legend>Contact Details</legend>
+        <label>UserName :
+            <input type="text" name="userName">
+        </label>
+        <br>
+        <label>Email :
+            <input type="text" name="Email">
+        </label>
+        <br>
+        <label>Phone No :
+            <input type="text" name="PhoneNo">
+        </label>
+</fieldset>
+
+<h3>Form Validation</h3>
+
+
+<label for="username">UserName :
+    <input type="text" name="username" required = "required">
+</label>
+<br>
+<label for="Possword">Possword :
+    <input type="password" name="Possword" required = "required">
+</label>
+<br>
+<label for="Button">
+    <input type="submit"  value="Submit">
+</label>
+
+<h3>Date Input</h3>
+
+<label for="date">Choose Date :
+    <input type="date" value="date" required = "required">
+</label>
+<br>
+<label for="Button">
+    <input type="submit" value="submit">
+</label>
+
+
+<h3>Email And Url Input</h3>
+
+<p>Enter Your Email Address</p>
+
+<label for="email">
+    <input type="email" value="email" required = "required">
+</label>
+<br>
+<br>
+<label for="url">
+    <input type="url" value="url" required = "required">
+</label>
+<br>
+<br>
+<label for="submit">
+    <input type="submit" value="submit">
+</label>
+
+<h3>Search Input</h3>
+<p>Search :</p>
+<label for="Search">
+    <input type="search" placeholder="Enter Keyword" required = "required">
+</label>
+<input type="submit" value="Search">
+
+
+<!--
+ Whenever you want to collect information from 
+ visitors you will need a form, which lives inside a 
+ <form> element.
+ Information from a form is sent in name/value pairs.
+ Each form control is given a name, and the text the 
+ user types in or the values of the options they select 
+ are sent to the server.
+ HTML5 introduces new form elements which make it 
+ easier for visitors to fill in forms
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
